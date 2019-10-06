@@ -9,7 +9,6 @@ function QuestionHandler(agent){
     return getSpreadsheetData().then(res => {
       	res.data.map(person => {
           if(person.Question === text )
-           agent.add(` ${person.Answer}`);
-          	
+           agent.add(` ${person.Answer}`);  	
         });
     });
