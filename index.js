@@ -3,7 +3,6 @@ const axios = require('axios');
 function  getSpreadsheetData(){
      return axios.get('https://sheetdb.io/api/v1/eodqzgdxnx66z');
    }
-  
 
 function QuestionHandler(agent){
     const text = agent.parameters.text;
