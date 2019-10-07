@@ -12,3 +12,8 @@ function QuestionHandler(agent){
            agent.add(` ${person.Answer}`);  	
         });
     });
+ 
+ let intentMap = new Map();
+ intentMap.set('ENUBUQuestion',QuestionHandler);
+ agent.handleRequest(intentMap);
+  
